@@ -26,13 +26,13 @@ main {
     width: 100%;
     max-width: 1280px;
     margin: auto;
-    padding-bottom: 7rem;
+    padding-bottom: 110px;
     display: block;
     flex: 1 0 auto;
     color: white;
 }
 p {
-    font-size: 2.3rem;
+    font-size: 2rem;
     color: rgb(35,53,68);
     margin: auto;
 }
@@ -108,7 +108,8 @@ li a:hover .red{
 .button {
     width: fit-content;
     margin: auto;
-    margin-top: 80px;
+    margin-top: 60px;
+    margin-bottom: -40px;
     padding: 10px 15px;
     background-color: transparent;
     border: 3px red solid;
@@ -138,7 +139,7 @@ li a:hover .red{
     text-align: left;
     margin: 0;
     margin-left: 1rem;
-    font-size: 3.5rem;
+    font-size: 3rem;
     color: rgb(35,53,68);
 }
 .bkgrnd {
@@ -161,6 +162,7 @@ li a:hover .red{
 }
 .bkgrnd .button {
     margin-top: 0px;
+    margin-bottom: 0;
 }
 .body p {
     margin: 0;
@@ -180,9 +182,7 @@ li a:hover .red{
 .about .button:hover a {
     color: inherit;
 }
-.how-to-help h1 {
-    text-align: right;
-}
+
 
 /* ####################### footer ###################### */
 footer {
@@ -243,6 +243,15 @@ footer p {
     .body {
         max-width: 93%;
     }
+    .body h1 { 
+        font-size: 2.5rem;
+    }
+    footer h1 {
+        font-size: 1.3rem;
+    }
+    footer p {
+        font-size: 1.1rem;
+    }
 }
 @media (max-width: 715px) {
     .title {
@@ -252,8 +261,17 @@ footer p {
     .body {
         margin-top: 50px;
     }
+    .body h1 { 
+        font-size: 2rem;
+    }
+    .body p {
+        font-size: 1.5rem;
+    }
     .bkgrnd {
         padding: 30px;
+    }
+    .about .bkgrnd {
+        padding-bottom: 30px;
     }
     .bkgrnd p {
         padding-bottom: 25px;
@@ -273,38 +291,82 @@ footer p {
     }
 }
 @media (max-width: 650px) {
+    main {
+        padding-bottom: 90px ;
+    }
     .title {
         font-size: 4rem;
     }
     p {
         font-size: 1.6rem;
     }
+    .loose {
+        margin-bottom: -20px;
+    }
 }
-@media (max-width: 560px) {
-
+@media (max-width: 568px) {
+    .title {
+        font-size: 3.4rem;
+    }
+    main {
+        padding-bottom: 80px;
+    }
+    .loose {
+        margin-bottom: -10px;
+    }
 }
-@media (max-width: 450px) {
+@media (max-width: 500px) {
+    .navbar li a, .navbar li p { 
+        font-size: 1.3rem;
+    }   
+    .signPetition {
+        margin-right: 5px;
+    }
+    main {
+        padding-bottom: 50px;
+    }
     .title {
         font-size: 3rem;
+        margin-top: 100px;
         margin-bottom: 1.5rem;
     }
-
-
-    main {
-        padding-bottom: 3rem;
+    .body {
+        max-width: 100%;
+        margin-top: 30px;
     }
-
+    .body h1 { 
+        font-size: 1.7rem;
+    }
+    .bkgrnd {
+        padding: 15px;
+    }
+    .about .bkgrnd {
+        padding-bottom: 15px;
+    }
+    .about2 p {
+        font-size: 1.3rem;
+    }
+    .loose {
+        margin-bottom: 20px;
+    }
     footer {
         padding: 1rem;
     }
-    footer li {
-        padding: 0 1.5rem;
+    footer h1 {
+        font-size: 1.2rem;
     }
     footer p {
-        font-size: 0;
-        margin: 0;
+        font-size: 1rem;
     }
-    footer img {
-        margin-top: 0.25rem;
+}
+@media (max-width: 420px) {
+    .navbar li a, .navbar li p {
+        font-size: ;
+    }
+    .title {
+        font-size: 2.5rem;
+    }
+    p {
+        font-size: 1.3rem;
     }
 }
