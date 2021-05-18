@@ -188,7 +188,7 @@ li a:hover .red{
 footer {
     bottom: 0;
     margin: 0;
-    padding: 20px;
+    padding: 15px;
     border-width: 0;
     background-color: rgb(35, 53, 68);
     color: white;
@@ -197,12 +197,25 @@ footer h1 {
     margin: 0;
     font-size: 1.5rem;
 }
-footer p {
+footer ul {
+    margin: auto;
     padding: 0;
-    margin: 0;
-    font-size: 1.2rem;
-    transition: color .25s;
-    color: white;
+}
+footer li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 1rem;
+    margin-top: 15px;
+}
+footer a {
+    padding: 0;
+}
+footer img {
+    width: 30px;
+    transition: opacity .25s;
+}
+footer li:hover p {
+    color: rgb(159, 173, 185);
 }
 
 /* ######################### sizing ##################### */
@@ -249,10 +262,6 @@ footer p {
     footer h1 {
         font-size: 1.3rem;
     }
-    footer p {
-        font-size: 1.1rem;
-    }
-}
 @media (max-width: 715px) {
     .title {
         font-size: 4.5rem;
@@ -352,17 +361,8 @@ footer p {
     footer {
         padding: 1rem;
     }
-    footer h1 {
-        font-size: 1.2rem;
-    }
-    footer p {
-        font-size: 1rem;
-    }
 }
 @media (max-width: 420px) {
-    .navbar li a, .navbar li p {
-        font-size: ;
-    }
     .title {
         font-size: 2.5rem;
     }
